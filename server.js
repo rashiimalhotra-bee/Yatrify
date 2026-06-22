@@ -120,9 +120,9 @@ app.listen(port, () => {
 // API routes tere wale upar rahenge
 
 // Frontend serve karne wali line
-app.use(express.static(path.join(__dirname, '../frontend')));
+app.use(express.static(__dirname));
 
 // Agar koi route match nahi hua to index.html de
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
