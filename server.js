@@ -113,7 +113,7 @@ app.listen(port, () => {
 });
 
 const path = require('path');
-const express = require('express');
+
 const app = express();
 
 // API routes tere wale upar rahenge
