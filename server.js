@@ -4,7 +4,8 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const bcrypt = require('bcryptjs');
 require('dotenv').config();
-
+const path = require('path');
+const app = express();
 
 const port = process.env.PORT || 3000;
 
@@ -112,9 +113,9 @@ app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
 });
 
-const path = require('path');
 
-const app = express();
+
+
 
 // API routes tere wale upar rahenge
 
