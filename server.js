@@ -5,7 +5,7 @@ const cors = require('cors');
 const bcrypt = require('bcryptjs');
 require('dotenv').config();
 
-const app = express();
+
 const port = process.env.PORT || 3000;
 
 // Middleware
