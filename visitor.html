@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Details</title>
+    <link rel="stylesheet" href="visitor.css">
+</head>
+<body>
+    <div class="container">
+        <div class="details">
+            <h2>Booking Details</h2>
+            <div class="form-group">
+                <label>Destination:</label>
+                <input type="text" id="destination" placeholder="Enter destination">
+            </div>
+            <div class="form-group">
+                <form id="booking.form">
+                <label FOR="slot"> Select City:</label>
+
+                <select id="slot" name="slot" required>
+                <option value="">Select slot</option>
+                <option value="Palitana">Slot 1</option>
+                <option value="Dwarka">Slot 2</option>
+                <option value="Somnath">Slot 3</option>
+                <option value="Ambaji">Slot 4</option>
+                </select>
+        
+            </div>
+            <div class="form-group">
+                <label>Valid Identity No:</label>
+                <input type="text" id="identity-no" placeholder="Enter identity no">
+            </div>
+            <div class="members">
+                <h3>Members:</h3>
+                <div class="member">
+                    <label>No of Members:</label>
+                    <input type="number" id="no-of-members" placeholder="Enter no of members">
+                </div>
+                <div class="member">
+                    <label>Name of Members:</label>
+                    <input type="text" id="name-of-members" placeholder="Enter name of members">
+                </div>
+                <div class="member">
+                    <label>Age:</label>
+                    <input type="text" id="age" placeholder="Enter age">
+                </div>
+                <div class="member">
+                    <label>Identity No:</label>
+                    <input type="text" id="member-identity-no" placeholder="Enter identity no">
+                </div>
+            </div>
+            <div class="amount">
+                <h3>Amount:</h3>
+                <p id="total-amount">Total Amount: ₹0</p>
+                <button class="pay-btn">Pay</button>
+                <div class="qr-code" style="display: none;">
+                    <img src="" alt="QR Code">
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="book.png" alt="Image">
+        </div>
+    </div>
+    <script src="script-v.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reschedule Time Slot</title>
+    <link rel="stylesheet" href="reschedule.css">
+</head>
+<body>
+    <div class="reschedule-container">
+        <h2>Reschedule Time Slot</h2>
+        <form>
+            <label for="current-time-slot">Current Time Slot:</label>
+            <input type="text" id="current-time-slot" name="current-time-slot" value="10:00 AM - 11:00 AM" readonly>
+
+            <label for="new-time-slot">New Time Slot:</label>
+            <select id="new-time-slot" name="new-time-slot">
+                <option value="9:00 AM - 10:00 AM">9:00 AM - 10:00 AM</option>
+                <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
+                <option value="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</option>
+                <option value="12:00 PM - 1:00 PM">12:00 PM - 1:00 PM</option>
+                <option value="1:00 PM - 2:00 PM">1:00 PM - 2:00 PM</option>
+            </select>
+
+            <label for="reschedule-reason">Reason for Rescheduling:</label>
+            <textarea id="reschedule-reason" name="reschedule-reason"></textarea>
+
+            <button type="submit">Reschedule</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+background-color: #519CAB;
+}
+
+.top{
+    display: flex;
+    border: 35px solid #FFC64F;
+    border-radius: 20px;
+    background-color: #FFC64F;
+}
+.heading{
+    text-align: center;
+    font-size: 45px;
+    background-color: #FFC64F;
+}
+    
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 600px;
+    height: 400px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.visitor-btn {
+    background-color: #4CAF50;
+    border:2px solid black;
+}
+
+.seller-btn {
+    background-color: #008CBA;
+    border:2px solid black;
+}

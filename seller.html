@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Pass</title>
+    <link rel="stylesheet" href="seller.css">
+</head>
+<body>
+    <div class="container">
+        <div class="details">
+            <h2>Seller Pass</h2>
+            <div class="form-group">
+                <label>Destination:</label>
+                <input type="text" id="destination" placeholder="Enter destination">
+            </div>
+            <div class="form-group">
+                <label>Time Slot:</label>
+                <input type="text" id="time-slot" placeholder="Enter time slot">
+            </div>
+            <div class="form-group">
+                <label>Valid Identity No:</label>
+                <input type="text" id="identity-no" placeholder="Enter identity no">
+            </div>
+            <div class="pass-amount">
+                <h3>Pass Amount: ₹50</h3>
+                <p>Disclaimer: Pass is valid for 3 years from the date of purchase.</p>
+            </div>
+            <div class="payment">
+                <h3>Pay using QR Code:</h3>
+                <div class="qr-code">
+                    <img src="qr-code.jpg" alt="QR Code">
+                </div>
+            </div>
+            <button class="confirm-btn" style="margin-top: 20px; padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">Confirm Booking</button>
+        </div>
+    </div>
+    <script src="script-s.js"></script>
+    <script>
+        document.querySelector('.confirm-btn').addEventListener('click', () => {
+            submitSellerBooking();
+        });
+    </script>
+</body>
+</html>
